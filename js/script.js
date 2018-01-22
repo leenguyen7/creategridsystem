@@ -14,13 +14,3 @@ var app = {
     },
 
 }
-
-
-
-//	var dropZone = $('#wrapper');
-// 
-// 	$('#column1').on("click", function(event){
-// 		dropZone.append('<div class="row"><div class="col-12"></div></div>');
-// 	})
-// 	$('#column2').on("click", function(event){
-// 		dropZone.append('<div class="row"><div class="col-6"></div><div class="col-6"></div></div>');
