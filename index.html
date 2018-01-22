@@ -7,24 +7,24 @@
     <title>Demo</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-    <div id="wrapper"">
+    <div id="wrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
     </div>
-
     <section class="sidebar">
         <ul class="row-tool">
             <li class="row1">
-                <div class="block" id="column1">1 column</div>
+                <div class="block" id="column1" onclick="app.addRow(rowVal.row1)">1 column</div>
             </li>
             <li class="row2">
-                <div class="block" id="column2">2 column</div>
+                <div class="block" id="column2" onclick="app.addRow(rowVal.row2)">2 column</div>
             </li>
             <li class="row3">
-                <div class="block" id="column3">3 column</div>
+                <div class="block" id="column3" onclick="app.addRow(rowVal.row3)">3 column</div>
             </li>
             <li class="row4">
-                <div class="block" id="column4">4 column</div>
+                <div class="block" id="column4" onclick="app.addRow(rowVal.row4)">4 column</div>
             </li>
         </ul>
     </section>
