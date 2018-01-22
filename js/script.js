@@ -7,26 +7,6 @@ var rowVal = {
     row4: '<div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div>'
 }
 
-//var DB = {
-//    getData: function () {
-//        if (typeof (Storage) !== "undefined") {
-//            var data;
-//            try {
-//                data = JSON.parse(localStorage.getItem('list')) || {};
-//            } catch (error) {
-//                data = {};
-//            }
-//            return data;
-//        } else {
-//            return {};
-//        }
-//    },
-//    setData: function (data) {
-//        localStorage.setItem('list', JSON.stringify(data));
-//    }
-//}
-//
-//var list = DB.getData();
 
 var app = {
     addRow: function (value,position) {
