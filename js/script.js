@@ -7,18 +7,19 @@ var rowVal = {
     row4: '<div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div><div class="col col-3" onclick="app.addControl(this)"></div>'
 }
 
-
 var app = {
-    addRow: function (value,position) {
-        
+    addRow: function (value) {
+
         var item = '<div class="row">' + value + '</div>';
-        
-        zone.append(item);
+
+        if ($('.col').is('.active')) {
+            $('.active').append(item);
+        } else {
+            zone.append(item);
+        }
     },
-    addControl: function(i){
-        
+    addControl: function (i) {
         $('.col').removeClass('active');
-        
         $(i).addClass('active');
     }
 }
