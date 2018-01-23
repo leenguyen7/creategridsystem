@@ -9,6 +9,12 @@ html,body{
     height: 100%;
 }
 
+.col{
+    width: 8%;
+    display: table-cell;
+    height: 75px;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%; position: relative;}
@@ -36,6 +42,7 @@ html,body{
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
+
 .col-12 {width: 100%; position: relative;}
 .col-12:hover{
     border:1px solid blue;
@@ -58,10 +65,7 @@ html,body{
 }
 
 [class*="col-"]{
-	float:left;
-	padding: 15px;
 	border: 1px dashed rgba(170,170,170,0.7);
-    height: 75px;
 }
 
 .row{
@@ -70,6 +74,10 @@ html,body{
     width: 100%;
     padding: 10px;
     border: 1px dashed rgba(170,170,170,0.7);
+}
+.row:hover{
+    border:1px solid blue;
+    cursor: pointer;
 }
 #wrapper{
 	overflow: auto;
